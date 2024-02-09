@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Protest+Strike&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TICTACTOE</h1>
+        <div id="grid-container">
+            <div class="row">
+                <div class="gridelement" id="0-0" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="0-1" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="0-2" onclick="UserChoice(this)"></div>
+            </div>
+            <div class="row">
+                <div class="gridelement" id="1-0" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="1-1" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="1-2" onclick="UserChoice(this)"></div>
+            </div>
+            <div class="row">
+                <div class="gridelement" id="2-0" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="2-1" onclick="UserChoice(this)"></div>
+                <div class="gridelement" id="2-2" onclick="UserChoice(this)"></div>
+            </div>
+        </div>
+        <div id="result"></div>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
