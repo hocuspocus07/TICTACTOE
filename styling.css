@@ -28,6 +28,9 @@ h1{
     font-weight: 500;
     font-family: "Honk", system-ui;
 }
+h1:hover{
+    cursor: pointer;
+}
 #grid-container{
     border-radius: 20px;
     border: 5px solid saddlebrown;

@@ -78,3 +78,14 @@ function reset() {
     document.getElementById('result').innerHTML = '';
     gameover=false;
 }
+function HeadingAnimation(){
+    let heading=document.getElementById('heading').innerText;
+    for(let i=0;i<=heading.length;i++){
+        setTimeout(() => {
+            let char=heading.slice(i);
+            let prefix=heading.slice(0,i);
+            let newname=char+prefix;
+            document.getElementById('heading').innerText=newname;     
+        }, i*500);
+    }
+}
